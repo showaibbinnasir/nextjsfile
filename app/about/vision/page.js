@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 
 export default async function Vision() {
-  // const boss = await getAllPost()
+  const boss = await getAllPost()
 
   return (
     <div>
-      {/* <div className='flex justify-center mt-10'>
+      <div className='flex justify-center mt-10'>
         <h1 className="text-3xl font-semibold">this is vision page</h1>
 
       </div>
@@ -22,9 +22,6 @@ export default async function Vision() {
               }
             </div>
         }
-      </div> */}
-      <div>
-        hello
       </div>
     </div>
   )
