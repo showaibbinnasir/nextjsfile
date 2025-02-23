@@ -1,5 +1,6 @@
 export default async function getPostDetails(id) {
-    const url = await fetch(`http://localhost:3000/api/getSinglePost/${id}`,
+    const baseURL = process.env.API_URL 
+    const url = await fetch(`${baseURL}/api/getSinglePost/${id}`,
 
       {
         next : {

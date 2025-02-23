@@ -1,5 +1,6 @@
 export default async function getAllPost() {
-    const url = await fetch(`http://localhost:3000/api/getReviews`,
+    const baseURL = process.env.API_URL 
+    const url = await fetch(`${baseURL}}/api/getReviews`,
 
       {
         next : {
