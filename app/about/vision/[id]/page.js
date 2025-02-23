@@ -1,3 +1,4 @@
+import getAllPost from '@/app/lib/getAllPost/getAllPost';
 import getPostDetails from '@/app/lib/getPostDetails/getPostDetails';
 
 export default async function BlogPost({ params }) {
@@ -17,4 +18,16 @@ export default async function BlogPost({ params }) {
             </div>
         </div>
     )
+}
+
+export async function generateStaticParams() {
+
+    const post = await getAllPost()
+
+    return post.map((posts) => ({
+        id : posts._id
+    }
+
+    ))
+    
 }
