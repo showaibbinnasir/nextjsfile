@@ -1,5 +1,5 @@
 export default async function getAllPost() {
-    const url = await fetch(`https://testdriveapi.neltify.app/api/getReviews`,
+    const url = await fetch(`https://showaibnextjs.netlify.app/api/getReviews`,
 
       {
         next : {

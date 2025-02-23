@@ -1,5 +1,5 @@
 export default async function getPostDetails(id) {
-    const url = await fetch(`https://testdriveapi.neltify.app/api/getSinglePost/${id}`,
+    const url = await fetch(`https://showaibnextjs.netlify.app/api/getSinglePost/${id}`,
 
       {
         next : {
