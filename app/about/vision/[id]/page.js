@@ -2,10 +2,10 @@ import getPostDetails from '@/app/lib/getPostDetails/getPostDetails';
 
 export default async function BlogPost({ params }) {
     const { id } = await params
-    const post = await getPostDetails(id)
+    // const post = await getPostDetails(id)
     return (
         <div>
-            <div>
+            {/* <div>
                 {post._id}
             </div>
             <div>
@@ -14,6 +14,9 @@ export default async function BlogPost({ params }) {
                 {post.title}
             </div><div>
                 {post.description}
+            </div> */}
+            <div>
+                hello
             </div>
         </div>
     )
